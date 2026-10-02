@@ -53,10 +53,11 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Define el contenido de la pantalla usando Jetpack Compose
         setContent {
-            WoofTheme {
+            WoofTheme {  // Aplica el tema personalizado: colores, tipografía y formas
                 // A surface container using the 'background' color from the theme
-                Surface(
+                Surface(  // Superficie que toma el color de fondo del tema
                     modifier = Modifier.fillMaxSize()
                 ) {
                     WoofApp()
